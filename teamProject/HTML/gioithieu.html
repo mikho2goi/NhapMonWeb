@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/logo tenshi.png">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/CSS/gioithieu.css">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Sushi Tenshi</title>
+  </head>
+  <body>
+   
+    <!-- Đầu Trang -->
+    <header id="site-header" class="fixed-top ">
+
+      <!--Thanh điều hướng-->
+      <nav class="navbar navbar-expand-lg  ">
+
+        <!--Logo-->
+        <div class="w-25  d-flex justify-content-center">
+          <a href="index.html"><img src="/image/logo tenshi.png" alt class="logo "></a>
+        </div>
+         <!--Phần responsive thành hamberger menu và các option trong thanh điều huớg-->
+       
+        <button class="navbar-toggler outline " type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#thanh-dieu-huong"
+          aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Thanh tìm kiếm-->
+        <div
+          class="collapse navbar-collapse text-nowrap  container-looking-nav p-3 "
+          id="thanh-dieu-huong">
+          <div class="d-flex  justify-content-center search-box flex-column position-relative searchInput">
+            <div id="search-bar" class="d-flex w-100 ">
+                  <input class=" form-control me-2 thanh-tim-kiem " type="search"
+                    placeholder="Tìm kiếm sản phẩm..."
+                    aria-label="Search" 
+                    id="search-input"
+                    onkeypress="handleKeyPress(event)"
+                    >
+                    <a href="menutong.html" style="color: black;"><button class=" ps-0 looking-icon " type="submit" ><i
+                      class="fa fa-search border-0" ></i></button></a>
+              </div>
+
+
+              <div class=" d-flex position-absolute flex-column  w-100 searching-result overflow-y-scroll overflow-x-hidden hide " >
+                <div class="products   d-flex flex-column justify-content-center row-gap-2  w-100">
+
+
+                  <a href="/HTML/menu3.html" class="">
+                    <div class="product d-flex ">
+                    
+                      <img src="/hinhanhmonnhat/khac1.jpg" alt="" class=" ">  
+                      
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                        <h5>Tôm Tepura áp chảo với trứng</h5>
+                        <p>128.000 VND</p>
+                      </div>
+                   
+                    </div>
+                  </a>
+  
+                  <a href="/HTML/menu3.html" class="">
+                    <div class="product d-flex ">
+                    
+                      <img src="/hinhanhmonnhat/khac2.jpg" alt="" class=" ">  
+                      
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                        <h5>Súp Konbu nấu đậu phụ Nhật rán</h5>
+                        <p>118.000 VND</p>
+                      </div>
+                   
+                    </div>
+                  </a>
+  
+  
+                  <a href="/HTML/menu1.html" class="">
+                    <div class="product d-flex ">
+                    
+                      <img src="/hinhanhmonnhat/ca-trich-ca-hoi-tom-nhat-bach-tuoc-trung-ca-hoi-song-va-com-sushi-tong-hop.jpg" alt="" class=" ">  
+                      
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                        <h5>Set sushi tổng hợp cở vừa</h5>
+                        <p>628.000 VND</p>
+                      </div>
+                   
+                    </div>
+                  </a>
+  
+  
+                  <a href="/HTML/menu1.html" class="">
+                    <div class="product d-flex ">
+                    
+                      <img src="/hinhanhmonnhat/ca-trich-ca-hoi-bach-tuoc-song-va-com-sushi-tong-hop-a.jpg" alt="" class=" ">  
+                      
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                        <h5>Set sushi tổng hợp cở nhỏ (A)</h5>
+                        <p>508.000 VND</p>
+                      </div>
+                   
+                    </div>
+                  </a>
+  
+  
+                  <a href="/HTML/menu1.html" class="">
+                    <div class="product d-flex ">
+                    
+                      <img src="/hinhanhmonnhat/ca-ngu-ca-hoi-ngao-bien-song-va-com-sushi-tong-hop-b.jpg" alt="" class=" ">  
+                      
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                        <h5>Set sushi tổng hợp cở nhỏ (B)</h5>
+                        <p>488.000 VND</p>
+                      </div>
+                   
+                    </div>
+                  </a>
+  
+  
+                  <a href="/HTML/menu1.html" class="">
+                    <div class="product d-flex ">
+                    
+                      <img src="/hinhanhmonnhat/bach-tuoc-uop-wasabi.jpg" alt="" class=" ">  
+                      
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                        <h5>Bạch tuột ướp wasabi</h5>
+                        <p>138.000 VND</p>
+                      </div>
+                   
+                    </div>
+                  </a>
+  
+  
+                  <a href="/HTML/menu3.html" class="">
+                    <div class="product d-flex ">
+                    
+                      <img src="/hinhanhmonnhat/khac4.jpg" alt="" class=" ">  
+                      
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                        <h5>Trứng hấp hải sản</h5>
+                        <p>118.000 VND</p>
+                      </div>
+                   
+                    </div>
+                  </a>
+  
+  
+  
+                  <a href="/HTML/menu3.html" class="">
+                    <div class="product d-flex ">
+                    
+                      <img src="/hinhanhmonnhat/khac9.jpg" alt="" class=" ">  
+                      
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                        <h5>Ngô Mỹ xào thịt hun khói</h5>
+                        <p>98.000 VND</p>
+                      </div>
+                   
+                    </div>
+                  </a>
+  
+  
+  
+                  <a href="/HTML/menu2.html" class="">
+                    <div class="product d-flex ">
+                    
+                      <img src="/hinhanhmonnhat/chien3.jpg" alt="" class=" ">  
+                      
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                        <h5>Tempura tôm với rau</h5>
+                        <p>138.000 VND</p>
+                      </div>
+                   
+                    </div>
+                  </a>
+  
+  
+  
+                  <a href="/HTML/menu2.html" class="">
+                    <div class="product d-flex ">
+                    
+                      <img src="/hinhanhmonnhat/chien6.jpg" alt="" class=" ">  
+                      
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                        <h5>Đầu cá hồi tẩm bột rán</h5>
+                        <p>228.000 VND</p>
+                      </div>
+                   
+                    </div>
+                  </a>
+  
+                  
+                </div>
+              
+              </div>
+              
+
+
+          </div>
+
+          <ul class="navbar-nav p-1 column-gap-1 w-75 justify-content-center ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"> <i
+                  class="fa-solid fa-house"></i> Trang Chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> <i class="fa-solid fa-list"></i>
+                Thực Đơn</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user"></i> Tài Khoản
+              </a>
+              <ul class="dropdown-menu "  aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="dangky.html">Đăng Ký</a></li>
+
+                <li><a class="dropdown-item" href="dangnhap.html"> Đăng Nhập</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gioithieu.html"><i class="far fa-address-card"></i>
+                Về Chúng Tôi</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+    <div class="name"></div>
+    <!-- Banner -->
+  
+    
+    <main class="mainContent-theme">
+    <div id="about-us">
+      <div class="sign">
+        <span class="sign__word">Chào mừng đến với SUSHI TENSHI</span>
+      </div>
+      <div class="container-about">
+        <p>SUSHI TENSHI phục vụ các món ăn truyền thống và sáng tạo của Nhật Bản. Bầu không khí bình dị trong khi thiết kế hiện đại và cao cấp góp phần mang đến trải nghiệm ăn uống thư giãn và thú vị. Một quầy bar sushi phong cách chiết trung được kết hợp với một nhà bếp Nhật Bản quy mô lớn cung cấp các món ăn truyền thống của Nhật Bản cũng như một quầy rượu đầy đủ với mười loại rượu sake.</p><hr>
+        <p>Trong 15 năm lịch sử của mình, nhà hàng SUSHI TENSHI đã phát triển trở thành một trong những điểm đến ăn uống Nhật Bản lớn nhất ở New York Cùng với tư cách là một đội ngũ chuyên gia nấu ăn lỗi lạc, chúng tôi đã giới thiệu cho người Mỹ nhiều món ăn Nhật Bản mới và cổ điển, củng cố sự giao lưu văn hóa giữa hai quốc gia lớn của chúng ta.</p> <hr>
+        <p>Mời các bạn đến tham gia và tự mình trải nghiệm một trong những nhà hàng và quán sushi ngon nhất Nhật Bản.</p>
+      </div>
+      <div class="sign">
+        <span class="sign__word">Các chuyên gia ẩm thực của nhà hàng</span>
+      </div>
+      <div class="container">
+        <div class="Hoshi_phan">
+          <div class="container__items">
+            <h1>ĐẦU BẾP</h1>
+            <div class="backgroud-h1"></div>
+            <img src="/image/img_home_about_beppho.jpg" alt="" class="container__img" />
+            <p>Hoshi Phan</p>
+          </div>
+          <div class="container__items1">
+            <p>
+              Hoshi Phan (tên thật Phan Quang Cường) - đầu bếp Nhật "khuấy đảo"
+              TikTok Việt Nam với những màn chế biến món ăn đẹp mắt "chuẩn 5 sao".
+              Anh chàng là đầu bếp yêu nghề, muốn cống hiến và chia sẻ kinh nghiệm
+              cũng như kiến thức nấu ăn cho cộng đồng nghề bếp nói chung và bếp Nhật
+              nói riêng. Tuy còn trẻ nhưng tay nghề của anh rất ấn tượng đủ để khiến 
+              cả các bậc tiền bối trầm trồ và khen ngợi.
+            </p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="Yoshihiro_Murata">
+          <div class="container__items1">
+            <p>
+              Sinh ra và lớn lên trong một gia đình có truyền thống về món Nhật
+              nhưng thời thanh niên lắm hoài bão, Yoshihiro Murata xách vali sang
+              Pháp học ẩm thực Tây. 6 tháng sau, ông lại xách vali về Nhật và tiếp
+              quản nhà hàng gia đình, đưa ẩm thực Nhật đến với thế giới. 
+            </p>
+          </div>
+          <div class="container__items">
+            <h1>BẾP TRƯỞNG</h1>
+            <div class="backgroud-h1"></div>
+            <img
+              src="/image/dau-bep-Yoshihiro-Murata2.jpg"
+              alt=""
+              class="container__img"
+            />
+            <p>Yoshihiro Murata</p>
+          </div>
+        </div>
+     </div>
+     </div>
+    </main>
+
+     <a href="#top" class="to-top d-flex"><i
+      class="fa-solid fa-chevron-up m-auto " id="footer-header"></i></a>
+  <!--Chân trang-->
+  <footer>
+    <section class="footer">
+      <div class="container-fluid ps-5">
+
+        <div class="row text-nowrap">
+          <div class="col-sm-6 col-md-6 col-lg-3 ">
+            <h3 class="footer-info">Về Chúng Tôi</h3>
+            <ul>
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 ">
+            <h3 class="footer-info">Chăm Sóc Khách Hàng</h3>
+            <ul class="row">
+              <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+              <li><a href="#">Quản Lý Tài Khoản</a></li>
+              <li><a href="#">Chính Sách Đặt Hàng</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 ">
+            <h3 class="footer-info">Thanh Toán</h3>
+            <img src="/image/icon-mastercard-3.svg" alt>
+            <img src="/image/icon-momo-2.svg" alt>
+            <img src="/image/icon-visa-3.svg" alt>
+          </div>
+          <div class="col-md-6 col-lg-3 conection ">
+            <h3 class="footer-info">Kết Nối Với Chúng Tôi</h3>
+            <a href="">
+            <img src="/image/icon-facebook-3.svg" alt>
+          </a>
+          <a href="">
+            <img src="/image/icon-youtube-3.svg" alt>
+          </a>
+          <a href="">
+            <img src="/image/icon-tiktok-3.svg" alt>
+          </a>
+          </div>
+        </div>
+
+      
+      
+    
+
+        <div class="col-md-3 contact p-0 text-nowrap mt-4 ">
+          <h2>Liên Hệ</h2>
+        </div>
+
+          <div class="col-md-9 justify-content-between p-0 mt-4">
+            <div class="row row-gap-3">
+                  <div class="col-md-6 text-nowrap contact-method">
+                    <i class="fa-solid fa-location-dot" style="color: #85b1ff;"></i>
+                    123 Ninh Kieu Can Tho
+                  </div>
+
+                  <div class="col-md-6 text-nowrap contact-method">
+                    <i class="fa-solid fa-envelope" style="color: #7aabff;"></i>
+                    SushiTenshi@gmail.com
+                  </div>
+
+                  <div class="col-md-6 text-nowrap contact-method">
+                    <i class="fa-solid fa-phone" style="color: #5794ff;"></i>
+                    028 7100 6789
+                 </div>
+
+                 
+                 <div class="col-md-6 text-nowrap contact-method">
+                  <i class="fa-solid fa-clock" style="color: #75a8ff;"></i>
+                  8:00 - 21:00
+               </div>
+                 
+            </div>
+        </div>
+      
+  
+
+    </div>
+    </section>
+  </footer>
+  <script src="/JS/timkiem.js"></script>
+  <script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/JS/header.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .registration-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .registration-container h2 {
+            color: #28a745; /* Green color for headings */
+        }
+
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .form-group button:hover {
+            background-color: #218838;
+        }
+
+        /* Thêm style cho thông báo thành công */
+        .success-message {
+            color: #28a745;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="registration-container">
+    <h2>Đăng ký</h2>
+    <form class="registration-form" onsubmit="registerUser(event)">
+        <div class="form-group">
+            <label for="username">Tài khoản:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Xác nhận mật khẩu:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Đăng ký</button>
+        </div>
+        <!-- Hiển thị thông báo thành công -->
+        <div class="success-message" id="successMessage" style="display: none;">
+            Đăng ký thành công! Chuyển hướng vào trang chủ...
+        </div>
+    </form>
+</div>
+
+<script>
+    function registerUser(event) {
+        // Ngăn form được submit bình thường
+        event.preventDefault();
+
+        // Thực hiện logic đăng ký ở đây
+
+        // Hiển thị thông báo thành công
+        document.getElementById("successMessage").style.display = "block";
+
+        // Chuyển hướng vào trang chủ sau 2 giây (2000 milliseconds)
+        setTimeout(function() {
+            window.location.href = "index.html";
+        }, 2000);
+    }
+</script>
+
+</body>
+</html>

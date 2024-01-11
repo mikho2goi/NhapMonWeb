@@ -1,0 +1,554 @@
+<!--Trần Bạch Bảo Khanh B2003788-->
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/logo tenshi.png">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/menu2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <title>Sushi Tenshi</title>
+  </head>
+  <body>
+    <!-- Đầu Trang -->
+    <header id="site-header" class="fixed-top ">
+
+      <!--Thanh điều hướng-->
+      <nav class="navbar navbar-expand-lg  ">
+  
+        <!--Logo-->
+        <div class="w-25  d-flex justify-content-center">
+          <a href="index-after-signin.html"><img src="/image/logo tenshi.png" alt class="logo "></a>
+        </div>
+         <!--Phần responsive thành hamberger menu và các option trong thanh điều huớg-->
+       
+        <button class="navbar-toggler outline " type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#thanh-dieu-huong"
+          aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Thanh tìm kiếm-->
+        <div
+          class="collapse navbar-collapse text-nowrap  container-looking-nav p-3 "
+          id="thanh-dieu-huong">
+          <div class="d-flex  justify-content-center search-box flex-column position-relative searchInput">
+            <div id="search-bar" class="d-flex w-100 ">
+                  <input class=" form-control me-2 thanh-tim-kiem " type="search"
+                    placeholder="Tìm kiếm sản phẩm..."
+                    aria-label="Search" 
+                    id="search-input"
+                    onkeypress="handleKeyPress(event)"
+                    >
+                    <a href="menutong.html" style="color: black;"><button class=" ps-0 looking-icon " type="submit" ><i
+                      class="fa fa-search border-0" ></i></button></a>
+              </div>
+  
+  
+              <div class=" d-flex position-absolute flex-column  w-100 searching-result overflow-y-scroll overflow-x-hidden hide " >
+                
+                  <div class="products  d-flex flex-column justify-content-center row-gap-2  w-100">
+  
+                    <a href="/HTML/menu3.html" class="">
+                      <div class="product d-flex ">
+                      
+                        <img src="/hinhanhmonnhat/khac1.jpg" alt="" class=" ">  
+                        
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                          <h5>Tôm Tepura áp chảo với trứng</h5>
+                          <p>128.000 VND</p>
+                        </div>
+                     
+                      </div>
+                    </a>
+    
+                    <a href="/HTML/menu3.html" class="">
+                      <div class="product d-flex ">
+                      
+                        <img src="/hinhanhmonnhat/khac2.jpg" alt="" class=" ">  
+                        
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                          <h5>Súp Konbu nấu đậu phụ Nhật rán</h5>
+                          <p>118.000 VND</p>
+                        </div>
+                     
+                      </div>
+                    </a>
+    
+    
+                    <a href="/HTML/menu1.html" class="">
+                      <div class="product d-flex ">
+                      
+                        <img src="/hinhanhmonnhat/ca-trich-ca-hoi-tom-nhat-bach-tuoc-trung-ca-hoi-song-va-com-sushi-tong-hop.jpg" alt="" class=" ">  
+                        
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                          <h5>Set sushi tổng hợp cở vừa</h5>
+                          <p>628.000 VND</p>
+                        </div>
+                     
+                      </div>
+                    </a>
+    
+    
+                    <a href="/HTML/menu1.html" class="">
+                      <div class="product d-flex ">
+                      
+                        <img src="/hinhanhmonnhat/ca-trich-ca-hoi-bach-tuoc-song-va-com-sushi-tong-hop-a.jpg" alt="" class=" ">  
+                        
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                          <h5>Set sushi tổng hợp cở nhỏ (A)</h5>
+                          <p>508.000 VND</p>
+                        </div>
+                     
+                      </div>
+                    </a>
+    
+    
+                    <a href="/HTML/menu1.html" class="">
+                      <div class="product d-flex ">
+                      
+                        <img src="/hinhanhmonnhat/ca-ngu-ca-hoi-ngao-bien-song-va-com-sushi-tong-hop-b.jpg" alt="" class=" ">  
+                        
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                          <h5>Set sushi tổng hợp cở nhỏ (B)</h5>
+                          <p>488.000 VND</p>
+                        </div>
+                     
+                      </div>
+                    </a>
+    
+    
+                    <a href="/HTML/menu1.html" class="">
+                      <div class="product d-flex ">
+                      
+                        <img src="/hinhanhmonnhat/bach-tuoc-uop-wasabi.jpg" alt="" class=" ">  
+                        
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                          <h5>Bạch tuột ướp wasabi</h5>
+                          <p>138.000 VND</p>
+                        </div>
+                     
+                      </div>
+                    </a>
+    
+    
+                    <a href="/HTML/menu3.html" class="">
+                      <div class="product d-flex ">
+                      
+                        <img src="/hinhanhmonnhat/khac4.jpg" alt="" class=" ">  
+                        
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                          <h5>Trứng hấp hải sản</h5>
+                          <p>118.000 VND</p>
+                        </div>
+                     
+                      </div>
+                    </a>
+    
+    
+    
+                    <a href="/HTML/menu3.html" class="">
+                      <div class="product d-flex ">
+                      
+                        <img src="/hinhanhmonnhat/khac9.jpg" alt="" class=" ">  
+                        
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                          <h5>Ngô Mỹ xào thịt hun khói</h5>
+                          <p>98.000 VND</p>
+                        </div>
+                     
+                      </div>
+                    </a>
+    
+    
+    
+                    <a href="/HTML/menu2.html" class="">
+                      <div class="product d-flex ">
+                      
+                        <img src="/hinhanhmonnhat/chien3.jpg" alt="" class=" ">  
+                        
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                          <h5>Tempura tôm với rau</h5>
+                          <p>138.000 VND</p>
+                        </div>
+                     
+                      </div>
+                    </a>
+    
+    
+    
+                    <a href="/HTML/menu2.html" class="">
+                      <div class="product d-flex ">
+                      
+                        <img src="/hinhanhmonnhat/chien6.jpg" alt="" class=" ">  
+                        
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 text-wrap" >
+                          <h5>Đầu cá hồi tẩm bột rán</h5>
+                          <p>228.000 VND</p>
+                        </div>
+                     
+                      </div>
+                    </a>
+    
+                    
+  
+  
+  
+              
+                </div>
+              
+         </div>
+              
+  
+  
+          </div>
+  
+          <ul class="navbar-nav p-1 column-gap-1 w-75 justify-content-center ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index-after-signin.html"> <i
+                  class="fa-solid fa-house"></i> Trang Chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menutong.html"> <i class="fa-solid fa-list"></i>
+                Thực Đơn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Order.html"> <i class="fa-solid fa-cart-shopping"></i>
+                Đặt Hàng</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user"></i> Tài Khoản
+              </a>
+              <ul class="dropdown-menu "  aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="user-info.html">Thông Tin Cá Nhân</a></li>
+  
+                <li><a class="dropdown-item" href="index.html"> Đăng Xuất</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gioithieu.html"><i class="far fa-address-card"></i>
+                Về Chúng Tôi</a>
+            </li>
+          </ul>
+        </div>
+  
+      </nav>
+    </header>
+  <div class="name" ></div>
+     <!-- Banner -->
+    <section class="banner-page  ">
+      <!-- Carousel -->
+      <div id="banner" class="carousel slide h-100" data-bs-ride="carousel">
+
+        <!-- chấm chuyển -->
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="0"
+            class="active button-carousel"></button>
+          <button class="button-carousel" type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
+          <button class="button-carousel" type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+        </div>
+
+        <!--  hình banner -->
+        <div class="carousel-inner  ">
+          <div class="carousel-item active ">
+            <img src="/image/Untitled-3.jpg" alt="Basic Shushi"
+              class="d-block w-100 h-100 custom-img">
+          </div>
+          <div class="carousel-item ">
+            <img src="/image/banner1.jpg"
+              alt="Special Shushi" class="d-block w-100 h-100 custom-img">
+          </div>
+          <div class="carousel-item">
+            <img src="/image/banner3.jpg"
+              alt="Avocado Salmon Sushi" class="d-block  w-100 h-100 custom-img">
+          </div>
+        </div>
+
+        <!-- nút chuyển trái phải -->
+        <button class="carousel-control-prev " type="button"
+          data-bs-target="#banner" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon button-previous-carousel"> </span>
+        </button>
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#banner" data-bs-slide="next">
+          <span class="carousel-control-next-icon button-next-carousel"></span>
+        </button>
+      </div>
+    </section>
+<!--Phần main-->
+    <main>
+      
+<!--Phàn nội chung chính-->
+  <div class="ndc">
+    <a href="menutong.html">
+      <div class="btn btn-light ms-4 mt-4 go-back"><p>Trở Lại</p><i class="fa-solid fa-arrow-right fa-rotate-180" style="color: #d75079;"></i></div>
+    </a>
+          <div class="container d-flex justify-content-center pt-5"><h1>Tempura </h1></div>
+      <table>
+        <tr class="h1">
+            <td class="ngang1">
+                <div class="o1">
+                    <section class="hinh">
+                        <img src="/hinhanhmonnhat/chien1.jpg" alt="">
+                    </section>
+                    <div>
+                        <p>Thịt lợn Nhật tẩm bột cay</p>
+                        <p>Nóng giòn, có vị the the của bột ớt, thịt tươi, ngon<br>200.000 VND</br></p>
+                    </div>
+                    <span class="sl1">
+                        <p>Số Lượng:<input type="number" name="soluong" min="0" max="100">
+                        <button type="submit">Chọn món</button></p>
+                    </span>
+                </div>
+
+                <div class="o2">
+                    <section class="hinh">
+                        <img src="/hinhanhmonnhat/chien2.jpg">
+                    </section>
+                    <div>
+                        <p>Thăn lợn Nhật cuộn quả bơ tẩm bột cay</p>
+                        <p>Nóng giòn, có vị the the của bột ớt, thịt tươi, ngon ăn kèm với bơ béo béo<br>138.000 VND</br></p>
+                    </div>
+                    <span class="sl2">
+                        <p>Số Lượng:<input type="number" name="soluong" min="0" max="100">
+                        <button type="submit">Chọn món</button></p>
+                    </span>
+                </div>
+
+                    <div class="o3">
+                        <section class="hinh">
+                            <img src="/hinhanhmonnhat/chien3.jpg">
+                        </section>
+                        <div>
+                            <p>Tempura tôm với rau</p>
+                            <p>Những con tôm cực tươi, được chiên giòn ăn cùng với 1 ít rong biển<br>138.000 VND</br></p>
+                        </div>
+                        <span class="sl1">
+                            <p>Số Lượng:<input type="number" name="soluong" min="0" max="100">
+                            <button type="submit">Chọn món</button></p>
+                        </span>
+                    </div>
+            </td>
+            <td class="ngang2">
+                <div class="o4">
+                    <section class="hinh">
+                        <img src="/hinhanhmonnhat/chien4.jpg">
+                    </section>
+                    <div>
+                        <p>Tempura sò nhân nhím biển cuộn lá tía tô</p>
+                        <p>Sò điệp giòn dai, nhím biển thơm. Một sự kết hợp tuyệt vời<br>208.000 VND</br></p>
+                    </div>
+                    <span class="sl4">
+                        <p>Số Lượng:<input type="number" name="soluong" min="0" max="100">
+                        <button type="submit">Chọn món</button></p>
+                    </span>
+                </div>
+
+                <div class="o5">
+                    <section class="hinh">
+                        <img src="/hinhanhmonnhat/chien5.jpg">
+                    </section>
+                    <div>
+                        <p>Sụn gà tempura</p>
+                        <p>Giòn, dai, béo là những từ miêu tả cho món ăn này<br>138.000 VND</br></p>
+                    </div>
+                    <span class="sl5">
+                        <p>Số Lượng:<input type="number" name="soluong" min="0" max="100">
+                        <button type="submit">Chọn món</button></p>
+                    </span>
+                </div>
+
+                <div class="o6">
+                    <section class="hinh">
+                        <img src="/hinhanhmonnhat/chien6.jpg">
+                    </section>
+                    <div>
+                        <p>Đầu cá hồi tẩm bột rán</p>
+                        <p>Đầu cá hồi béo, ít xương, phần da giòn béo ngậy<br>228.000 VND</br></p>
+                    </div>
+                    <span class="sl6">
+                        <p>Số Lượng:<input type="number" name="soluong" min="0" max="100">
+                        <button type="submit">Chọn món</button></p>
+                    </span>
+                </div>
+            </td>
+
+            <td class="ngang3">
+                <div class="o7">
+                    <section class="hinh">
+                        <img src="/hinhanhmonnhat/chien7.jpg">
+                    </section>
+                    <div>
+                        <p>Cơm chiên kiểu Nhật kèm bạch quả nướng</p>
+                        <p>Cơm được ướp vừa vị, được tẩm qua 1 lớp bột chiên giòn ăn kèm với vị ngọt bùi của bạch quả<br>118.000 VND</br></p>
+                    </div>
+                    <span class="sl7">
+                        <p>Số Lượng:<input type="number" name="soluong" min="0" max="100">
+                        <button type="submit">Chọn món</button></p>
+                    </span>
+                </div>
+
+                <div class="o8">
+                    <section class="hinh">
+                        <img src="/hinhanhmonnhat/chien8.jpg">
+                    </section>
+                    <div>
+                        <p>Cá thu tẩm bột cà ri cay</p>
+                        <p>Cá thu thơm, mang theo hương vị biển ca, được bao phủ 1 lớp bột cà ri thơm lừng<br>168.000 VND</br></p>
+                    </div>
+                    <span class="sl8">
+                        <p>Số Lượng:<input type="number" name="soluong" min="0" max="100">
+                        <button type="submit">Chọn món</button></p>
+                    </span>
+                </div>
+
+                <div class="o9">
+                    <section class="hinh">
+                        <img src="/hinhanhmonnhat/chien9.jpg">
+                    </section>
+                    <div>
+                        <p>Tempura tổng hợp</p>
+                        <p>Bao gồm tepura tôm, thanh cua đều được chiên giòn mang vẻ bề ngoài màu vàng lấp lánh<br>200.000 VND</br></p>
+                    </div>
+                    <span class="sl9">
+                        <p>Số Lượng:<input type="number" name="soluong" min="0" max="100">
+                        <button type="submit">Chọn món</button></p>
+                    </span>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+      <!--Phân trang-->
+
+    <div class=" d-flex justify-content-center py-5">
+      <a href="menu1.html">
+        <div class="btn  button-move"><i class="fa-solid fa-arrow-right fa-rotate-180" style="color: #5092d7;"></i></div>
+      </a>
+      <a href="menu1.html">
+    <div class="btn  button-move">1</div>
+  </a>
+  <a href="menu2.html">
+    <div class="btn  button-move" style="background-color:#df4801 ;">2</div>
+  </a>
+  <a href="menu3.html">
+    <div class="btn  button-move">3</div>
+  </a>
+    <a href="menu3.html">
+    <div class="btn  button-move"><i class="fa-solid fa-arrow-right" style="color: #5092d7;"></i></div>
+  </a>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+          
+    </main>
+      
+    <a href="#top" class="to-top d-flex"><i
+      class="fa-solid fa-chevron-up m-auto " id="footer-header"></i></a>
+
+  <!--Chân trang-->
+  <footer>
+    <section class="footer">
+      <div class="container-fluid ps-5">
+
+        <div class="row text-nowrap">
+          <div class="col-sm-6 col-md-6 col-lg-3 ">
+            <h3 class="footer-info">Về Chúng Tôi</h3>
+            <ul>
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="gioithieu.html">Giới thiệu</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 ">
+            <h3 class="footer-info">Chăm Sóc Khách Hàng</h3>
+            <ul class="row">
+              <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+              <li><a href="#">Quản Lý Tài Khoản</a></li>
+              <li><a href="#">Chính Sách Đặt Hàng</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 ">
+            <h3 class="footer-info">Thanh Toán</h3>
+            <img src="/image/icon-mastercard-3.svg" alt>
+            <img src="/image/icon-momo-2.svg" alt>
+            <img src="/image/icon-visa-3.svg" alt>
+          </div>
+          <div class="col-md-6 col-lg-3 conection ">
+            <h3 class="footer-info">Kết Nối Với Chúng Tôi</h3>
+            <a href="">
+            <img src="/image/icon-facebook-3.svg" alt>
+          </a>
+          <a href="">
+            <img src="/image/icon-youtube-3.svg" alt>
+          </a>
+          <a href="">
+            <img src="/image/icon-tiktok-3.svg" alt>
+          </a>
+          </div>
+        </div>
+
+      
+      
+    
+
+        <div class="col-md-3 contact p-0 text-nowrap mt-4 ">
+          <h2>Liên Hệ</h2>
+        </div>
+
+          <div class="col-md-9 justify-content-between p-0 mt-4">
+            <div class="row row-gap-3">
+                  <div class="col-md-6 text-nowrap contact-method">
+                    <i class="fa-solid fa-location-dot" style="color: #85b1ff;"></i>
+                    123 Ninh Kieu Can Tho
+                  </div>
+
+                  <div class="col-md-6 text-nowrap contact-method">
+                    <i class="fa-solid fa-envelope" style="color: #7aabff;"></i>
+                    SushiTenshi@gmail.com
+                  </div>
+
+                  <div class="col-md-6 text-nowrap contact-method">
+                    <i class="fa-solid fa-phone" style="color: #5794ff;"></i>
+                    028 7100 6789
+                 </div>
+
+                 
+                 <div class="col-md-6 text-nowrap contact-method">
+                  <i class="fa-solid fa-clock" style="color: #75a8ff;"></i>
+                  8:00 - 21:00
+               </div>
+                 
+            </div>
+        </div>
+      
+      
+
+    </div>
+    </section>
+
+  </footer>
+    <script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/JS/timkiem.js"></script>
+    <script src="/JS/header.js"></script>
+  </body>
+</html>
